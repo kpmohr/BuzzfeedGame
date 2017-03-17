@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Game Page - Project 1</title>
+
+  <link rel="stylesheet" href="style.css">
+  <script src="javascript/jquery-1.11.3.js"></script>
+  <script src="starter.js"></script>
+</head>
+<body id="gamePage2Body">
+<audio autoplay>
+  <source src="music/hpsong.mp3" type="audio/mpeg">
+</audio>
+  <div id="gameHeader">
+        <h1>The modern day sorting hat is here!</h1><br>
+        <p class="headerFormInfo"></p>
+
+  </div>
+  <div class="quiz">
+  <!-- Completely stole these questions from:
+
+  https://www.buzzfeed.com/mackenziekruvant/which-hogwarts-house-do-you-belong-in?utm_term=.hi5mxGWpL#.fq94LBKry....-->
+
+    <div id="questionOne" class="questionDiv">
+        <h2 class="quiz-question">1) Pick A Candy</h2>
+        <ul id="1">
+          <li class="quiz-answer 1a" ><input type="checkbox">Chocolate Frogs</li>
+          <li class="quiz-answer 1b"><input type="checkbox">Bertie Bott’s Every Flavour Beans</li>
+          <li class="quiz-answer 1c"><input type="checkbox">Honeydukes Sherbet Lemons</li>
+          <li class="quiz-answer 1d"><input type="checkbox">Fizzy Wizzy</li>
+        </ul>
+    </div>
+
+    <div id="questionTwo" class="questionDiv">
+        <h2 class="quiz-question">2) Pick A Pet</h2>
+        <ul id="2">
+          <li class="quiz-answer 2a"><input type="checkbox">A lizard</li>
+          <li class="quiz-answer 2b"><input type="checkbox">A dog</li>
+          <li class="quiz-answer 2c"><input type="checkbox">A cat</li>
+          <li class="quiz-answer 2d"><input type="checkbox">A ferret</li>
+        </ul>
+    </div>
+
+    <div id="questionThree" class="questionDiv">
+        <h2 class="quiz-question">3) Pick A Class</h2>
+        <ul id="3">
+          <li class="quiz-answer 3a"><input type="checkbox">Charms</li>
+          <li class="quiz-answer 3b"><input type="checkbox">Potions</li>
+          <li class="quiz-answer 3c"><input type="checkbox">History of Magic</li>
+          <li class="quiz-answer 3d"><input type="checkbox">Herbology</li>
+        </ul>
+    </div>
+
+    <div id="questionFour" class="questionDiv">
+        <h2 class="quiz-question">4) If your friend cheated on a test you would...</h2>
+        <ul id="4">
+          <li class="quiz-answer 4a"><input type="checkbox">Offer to help them study for the next one</li>
+          <li class="quiz-answer 4b"><input type="checkbox">Offer to let them cheat off of your test next time</li>
+          <li class="quiz-answer 4c"><input type="checkbox">Tell on them, that’s not fair</li>
+          <li class="quiz-answer 4d"><input type="checkbox">Ignore it</li>
+        </ul>
+    </div>
+
+    <div id="questionFive" class="questionDiv">
+        <h2 class="quiz-question">5) Pick A Color</h2>
+        <ul id="5">
+          <li class="quiz-answer 5a"><input type="checkbox">Pink</li>
+          <li class="quiz-answer 5b"><input type="checkbox">Purple</li>
+          <li class="quiz-answer 5c"><input type="checkbox">White</li>
+          <li class="quiz-answer 5d"><input type="checkbox">Orange</li>
+        </ul>
+    </div>
+
+    <div id="questionSix" class="questionDiv">
+        <h2 class="quiz-question">6) If you could only do one thing for the rest of your life you would...</h2>
+        <ul id="6">
+          <li class="quiz-answer 6a"><input type="checkbox">Explore the world</li>
+          <li class="quiz-answer 6b"><input type="checkbox">Start your own company</li>
+          <li class="quiz-answer 6c"><input type="checkbox">Stay in school forever. You can never learn too much, right?</li>
+          <li class="quiz-answer 6d"><input type="checkbox">Start a family ASAP</li>
+        </ul>
+    </div>
+
+    <div id="questionSeven" class="questionDiv">
+        <h2 class="quiz-question">7) Pick A Red Head</h2>
+        <ul id="7">
+          <li class="quiz-answer 7a"><input type="checkbox">Arthur</li>
+          <li class="quiz-answer 7b"><input type="checkbox">Fred</li>
+          <li class="quiz-answer 7c"><input type="checkbox">Ron</li>
+          <li class="quiz-answer 7d"><input type="checkbox">Ginny</li>
+    </div>
+
+    <div id="questionEight" class="questionDiv">
+        <h2 class="quiz-question">8) If you were going to vacation you would go to...</h2>
+        <ul id="8">
+          <li class="quiz-answer 8a"><input type="checkbox">London</li>
+          <li class="quiz-answer 8b"><input type="checkbox">The wildnerness</li>
+          <li class="quiz-answer 8c"><input type="checkbox">Home to my family</li>
+          <li class="quiz-answer 8d"><input type="checkbox">The beach</li>
+        </ul>
+    </div>
+
+    <div id="questionNine" class="questionDiv">
+        <h2 class="quiz-question">9) Your Patronous would be...</h2>
+        <ul id="9">
+          <li class="quiz-answer 9a"><input type="checkbox">Panther</li>
+          <li class="quiz-answer 9b"><input type="checkbox">Fox</li>
+          <li class="quiz-answer 9c"><input type="checkbox">HedgeHog</li>
+          <li class="quiz-answer 9d"><input type="checkbox">Cat</li>
+        </ul>
+    </div>
+
+    <div id="questionTen"  class="questionDiv">
+        <h2 class="quiz-question">10) A chaser on your Qudditch team drops the quaffle and these is no way they will be able to recover it. You...</h2>
+        <ul id="10">
+          <li class="quiz-answer 10a"><input type="checkbox">Get frustrated and yell at them</li>
+          <li class="quiz-answer 10b"><input type="checkbox">Let it go. You win some, you lose some</li>
+          <li class="quiz-answer 10c"><input type="checkbox">Be passive aggressive about it after the game</li>
+          <li class="quiz-answer 10d"><input type="checkbox">Try to fight the referee on it</li>
+        </ul>
+    </div>
+
+    <div id="questionEleven" class="questionDiv">
+        <h2 class="quiz-question">11) On a Saturday night you can be found...</h2>
+        <ul id="11">
+          <li class="quiz-answer 11a"><input type="checkbox">At the movies or a concert</li>
+          <li class="quiz-answer 11b"><input type="checkbox">Staying in with friends</li>
+          <li class="quiz-answer 11c"><input type="checkbox">Bar hopping</li>
+          <li class="quiz-answer 11d"><input type="checkbox">Sleeping</li>
+        </ul>
+    </div>
+
+    <div id="questionTwelve" class="questionDiv">
+        <h2 class="quiz-question">12) Your mom sends you a howler for something you didn't do wrong. You...</h2>
+        <ul id="12">
+          <li class="quiz-answer 12a"><input type="checkbox">Feel bad that you upset her</li>
+          <li class="quiz-answer 12b"><input type="checkbox">Are embarrassed that everyone heard but don’t really care that she’s mad</li>
+          <li class="quiz-answer 12c"><input type="checkbox">Write her back to let her know she’s wrong</li>
+          <li class="quiz-answer 12d"><input type="checkbox">Say she’s crazy and you’re obviously right</li>
+        </ul>
+    </div>
+
+</div>
+
+<div class="quiz-result"></div>
+</body>
+</html>

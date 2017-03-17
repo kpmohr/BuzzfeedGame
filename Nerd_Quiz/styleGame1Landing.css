@@ -1,0 +1,80 @@
+body {
+  background-color: #111;
+}
+
+/*Stole this css information from the Star Wars lab we did!*/
+p {
+  position: absolute;
+  color: gold;
+  font-family: Death Star;
+  animation: scroll 20s linear;
+  letter-spacing: 2px;
+
+}
+
+#container {
+  position: absolute;
+  width: 60%;
+  left: 20%;
+  height: 8em;
+  bottom: 0px;
+  margin: 0 auto;
+  font-weight: bold;
+  text-align: justify;
+  font-size: 25pt;
+  line-height: 55px;
+  transform: perspective(700px) rotateX(45deg);
+}
+
+@keyframes scroll {
+  0% { top: 100%; }
+  100% {top: -500%;}
+}
+
+form {
+  font-family: AYearWithoutRain;
+  font-size: 36px;
+  color: white;
+  text-shadow: 2px 2px #363738;
+}
+
+  form input {
+    background-color: #363738;
+    color: white;
+    font-family: AYearWithoutRain;
+  }
+
+  #formInput {
+    font-size: 20px;
+    font-family: AYearWithoutRain;
+  }
+
+  #submitInput {
+    font-size: 20px;
+    font-family: AYearWithoutRain;
+  }
+
+#form {
+  margin: 20px;
+}
+
+
+@media only screen and (max-width: 700px) {
+form {
+  font-size: 24px;
+}
+
+  #formInput {
+    font-size: 16px;
+  }
+
+  #submitInput {
+    font-size: 16px;
+  }
+
+#form {
+  margin: 15px;
+}
+
+}
+

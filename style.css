@@ -1,0 +1,108 @@
+body {
+  background-image: url(image/lotr.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: beyondthemountains;
+}
+
+#content {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 7%;
+}
+
+#header {
+  font-size: 50px;
+  color: white;
+  margin: 30px auto;
+  align-content: center;
+  text-shadow: 2px 2px cornflowerBlue;
+  font-weight: bold;
+}
+
+#quizOptions {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
+}
+
+form {
+  width: 80%;
+  margin: 20px;
+}
+
+.quizChoice {
+  width: 450px;
+}
+
+p {
+  font-size: 32px;
+  color: white;
+  text-shadow: 2px 2px grey;
+  align-content: center;
+  padding: 0 0 25px 0;
+  margin: 0;
+  line-height: 42px;
+}
+
+button {
+  font-size: 28px;
+  color: white;
+  background-color: grey;
+  font-family: helvetica;
+}
+
+#houseQuiz {
+  background-color: rgba(0,0,0,0.4);
+  padding: 20px 20px 20px 40px;
+}
+
+#nerdQuiz {
+  background-color: rgba(0,0,0,0.4);
+  padding: 20px 20px 20px 40px;
+}
+
+.hpImage {
+  background-image: url(image/harryPotter.jpg);
+}
+
+.swImage {
+  background-image: url(image/starWars.jpg);
+}
+
+@media only screen and (max-width: 1000px) {
+
+#header {
+  font-size: 36px;
+}
+
+form {
+  width: 80%;
+  margin: 10px;
+}
+
+.quizChoice {
+  width: 250px;
+}
+
+p {
+  font-size: 24px;
+  padding: 0 0 15px 0;
+}
+
+button {
+  font-size: 18px;
+}
+
+#houseQuiz {
+  padding: 10px 10px 10px 20px;
+}
+
+#nerdQuiz {
+  padding: 10px 10px 10px 20px;
+}
+
+}

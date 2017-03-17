@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Game Page - Project 1</title>
+
+  <link rel="stylesheet" href="styleGame1.css">
+  <script src="javascript/jquery-1.11.3.js"></script>
+  <script src="starter2.js"></script>
+</head>
+<body>
+<div id="content">
+  <div id="header">Are You A Nerd?</div>
+  <form>
+  <div class="quiz">
+  <!-- Completely stole these questions from:
+
+  http://www.quibblo.com/quiz/hGt11Jb/Are-You-A-Sci-FiFantasy-Nerd
+
+  I am definitely not this funny or clever....-->
+    <div id="start">
+      <div class=startText>To begin the quiz ____ press the button below!</div>
+      <button type="submit" name="startButton" id="startButton" class="button">Start Quiz</button>
+    </div>
+    <div id="questionOne" class="questionDiv">
+        <h2 class="quiz-question">1) What is Chewbacca?</h2>
+        <ul id="1">
+          <li class="quiz-answer 1a"><input type="radio" name="Q1">Wait, who?</li>
+          <li class="quiz-answer 1b"><input type="radio" name="Q1">An Ewok</li>
+          <li class="quiz-answer 1c"><input type="radio" name="Q1">A Wookiee</li>
+          <li class="quiz-answer 1d"><input type="radio" name="Q1">A Mog</li>
+        </ul>
+        <button type="submit" value="Submit" name="q1Submit" id="q1Submit" class="button">Next Question</button>
+    </div>
+
+    <div id="questionTwo" class="questionDiv">
+        <h2 class="quiz-question">2) What series of numbers and/or letters shows up in every Star Wars movie?</h2>
+        <ul id="2">
+          <li class="quiz-answer 2a"><input type="radio" name="Q2">1138</li>
+          <li class="quiz-answer 2b"><input type="radio" name="Q2">A113</li>
+          <li class="quiz-answer 2c"><input type="radio" name="Q2">TK-421</li>
+          <li class="quiz-answer 2d"><input type="radio" name="Q2">DL-44</li>
+        </ul>
+        <button type="submit" value="Submit" name="q2Submit" id="q2Submit" class="button">Next Question</button>
+    </div>
+
+    <div id="questionThree" class="questionDiv">
+        <h2 class="quiz-question">3) What kind of blaster does Han Solo favor? </h2>
+        <ul id="3">
+          <li class="quiz-answer 3a"><input type="radio" name="Q3">E-11, standard issue</li>
+          <li class="quiz-answer 3b"><input type="radio" name="Q3">DL-44 blaster pistol</li>
+          <li class="quiz-answer 3c"><input type="radio" name="Q3">Just a normal one</li>
+          <li class="quiz-answer 3d"><input type="radio" name="Q3">He uses a lightsaber. Duh.</li>
+        </ul>
+        <button type="submit" value="Submit" name="q3Submit" id="q3Submit" class="button">Next Question</button>
+    </div>
+
+    <div id="questionFour" class="questionDiv">
+        <h2 class="quiz-question">4) (In the books) Why did the Ents go to war?</h2>
+        <ul id="4">
+          <li class="quiz-answer 4a"><input type="radio" name="Q4">They were mad at Saruman for destroying the trees.</li>
+          <li class="quiz-answer 4b"><input type="radio" name="Q4">Pippin thought they should, and no one had any objections, so it all just kind of worked out.</li>
+          <li class="quiz-answer 4c"><input type="radio" name="Q4">They were trying to take the Ring through Isengard and over to Mor- oops, I mean, the land-which-we-do-not-name.</li>
+          <li class="quiz-answer 4d"><input type="radio" name="Q4">They were sacrificing themselves to save.
+        </ul>
+        <button type="submit" value="Submit" name="q4Submit" id="q4Submit" class="button">Next Question</button>
+    </div>
+
+    <div id="questionFive"  class="questionDiv">
+        <h2 class="quiz-question">5) Where is Legolas Greenleaf from?</h2>
+        <ul id="5">
+          <li class="quiz-answer 5a"><input type="radio" name="Q5">Heaven! &hearts;</li>
+          <li class="quiz-answer 5b"><input type="radio" name="Q5">Rivendell</li>
+          <li class="quiz-answer 5c"><input type="radio" name="Q5">Roundabouts that little town over yonder.</li>
+          <li class="quiz-answer 5d"><input type="radio" name="Q5">Mirkwood</li>
+        </ul>
+        <button type="submit" value="Submit" name="q5Submit" id="q5Submit" class="button">Next Question</button>
+    </div>
+
+    <div id="questionSix"  class="questionDiv">
+        <h2 class="quiz-question">6) What are the two names of Aragorn's sword, the Sword that was Broken?</h2>
+        <ul id="6">
+          <li class="quiz-answer 6a"><input type="radio" name="Q6">Orcrist and Glamdring</li>
+          <li class="quiz-answer 6b"><input type="radio" name="Q6">Narsil and Anduril</li>
+          <li class="quiz-answer 6c"><input type="radio" name="Q6">Sting and Bite</li>
+          <li class="quiz-answer 6d"><input type="radio" name="Q6">Brisingr and Zar'roc</li>
+        </ul>
+        <button type="submit" value="Submit" name="q6Submit" id="q6Submit" class="button">Next Question</button>
+    </div>
+
+    <div id="questionSeven" class="questionDiv">
+        <h2 class="quiz-question">7) Why is Hagrid so attached to his pink umbrella?</h2>
+        <ul id="7">
+          <li class="quiz-answer 7a"><input type="radio" name="Q7">That's where he keeps his illegal wand.</li>
+          <li class="quiz-answer 7b"><input type="radio" name="Q7">That's where he keeps his knitting. I wonder if he'll use his canary yellow circus tent....</li>
+          <li class="quiz-answer 7c"><input type="radio" name="Q7">That's where he keeps his dragon egg.</li>
+          <li class="quiz-answer 7d"><input type="radio" name="Q7">He's just a little different....</li>
+        </ul>
+        <button type="submit" value="Submit" name="q7Submit" id="q7Submit" class="button">Next Question</button>
+    </div>
+
+    <div id="questionEight" class="questionDiv">
+        <h2 class="quiz-question">8) Who is the other creator of the Sorcerer's (Philosopher's) Stone, besides Dumbledore?</h2>
+        <ul id="8">
+          <li class="quiz-answer 8a"><input type="radio" name="Q8">Grindelwald</li>
+          <li class="quiz-answer 8b"><input type="radio" name="Q8">Flamel</li>
+          <li class="quiz-answer 8c"><input type="radio" name="Q8">Snape</li>
+          <li class="quiz-answer 8d"><input type="radio" name="Q8">Lupin</li>
+        </ul>
+        <button type="submit" value="Submit" name="q8Submit" id="q8Submit" class="button">Next Question</button>
+    </div>
+
+    <div id="questionNine" class="questionDiv">
+        <h2 class="quiz-question">9) Who is the Half-Blood Prince?</h2>
+        <ul id="9">
+          <li class="quiz-answer 9a"><input type="radio" name="Q9">Voldemort</li>
+          <li class="quiz-answer 9b"><input type="radio" name="Q9">Harry</li>
+          <li class="quiz-answer 9c"><input type="radio" name="Q9">Dumbledore</li>
+          <li class="quiz-answer 9d"><input type="radio" name="Q9">Snape</li>
+        </ul>
+        <button type="submit" value="Submit" name="q9Submit" id="q9Submit" class="button">Next Question</button>
+    </div>
+
+    <div id="questionTen" class="questionDiv">
+        <h2 class="quiz-question">10) What is the name of Harry's youngest son?</h2>
+        <ul id="10">
+          <li class="quiz-answer 10a"><input type="radio" name="Q10">Sirius Dumbledore Potter</li>
+          <li class="quiz-answer 10b"><input type="radio" name="Q10">James Sirius Potter</li>
+          <li class="quiz-answer 10c"><input type="radio" name="Q10">Albus Severus Potter</li>
+          <li class="quiz-answer 10d"><input type="radio" name="Q10">Sirius Remus Potter</li>
+        </ul>
+        <button type="submit" value="Submit" name="q10Submit" id="q10Submit" class="button">See Your Score!</button>
+    </div>
+
+    <div id="answerDiv" class="questionDiv">
+      <h2 class="answerScore"></h2>
+      <div id="answerResponce"></div>
+    </div>
+  </div>
+  </form>
+</div>
+</body>
+</html>

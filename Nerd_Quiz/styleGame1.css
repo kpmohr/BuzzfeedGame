@@ -1,0 +1,172 @@
+body {
+  background-color: black;
+  font-family: AYearWithoutRain;
+}
+
+#header {
+  color: white;
+  font-size: 36px;
+  margin: 50px auto;
+  text-align: center;
+}
+
+form {
+  width: 650px;
+  height: 350px;
+  border: 5px grey solid;
+  margin: 50px auto;
+  display: flex;
+  align-self: center;
+  align-content: center;
+  justify-content: center;
+  background-color: lightgrey;
+}
+
+button {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  font-size: 18px;
+  font-family: AYearWithoutRain;
+  color: white;
+  background-color: grey;
+}
+
+.quiz {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  padding: 15px;
+  max-width:650px;
+  margin: 45px auto;
+}
+
+  .quiz ul {
+      list-style:none;
+      padding:0;
+      margin:0;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+  }
+
+  .quiz li {
+      width: 300px;
+      margin: 5px 5px 5px 5px;
+      font-size: 20px;
+  }
+
+  .quiz li:hover {
+      background-color: white;
+  }
+
+  .questionDiv {
+    display: none;
+  }
+
+  .startText {
+    margin-bottom: 20px;
+    font-size: 24px;
+  }
+
+.hpImage {
+  background-image: url(image/10points.png);
+  height: 150px;
+  width: 202px;
+}
+
+.lotrImage {
+  background-image: url(image/foolofatook.png);
+  height: 150px;
+  width: 425px;
+}
+
+.swImage {
+  background-image: url(image/forcestrong.png);
+  height: 150px;
+  width: 198px;
+}
+
+.winnerImage {
+  background-image: url(image/nerdseverywhere.png);
+  height: 150px;
+  width: 304px;
+}
+
+#questionOne {
+  cursor: url(image/lightsaber.png), auto;
+}
+
+#questionTwo {
+  cursor: url(image/lightsaber.png), auto;
+}
+
+#questionThree {
+  cursor: url(image/lightsaber.png), auto;
+}
+
+#questionFour {
+  cursor: url(image/ring.png), auto;
+}
+
+#questionFive {
+  cursor: url(image/ring.png), auto;
+}
+
+#questionSix {
+  cursor: url(image/ring.png), auto;
+}
+
+#questionSeven {
+  cursor: url(image/hpWand.png), auto;
+}
+
+#questionEight {
+  cursor: url(image/hpWand.png), auto;
+}
+
+#questionNine {
+  cursor: url(image/hpWand.png), auto;
+}
+
+#questionTen {
+  cursor: url(image/hpWand.png), auto;
+}
+
+@media only screen and (max-width: 800px) {
+#header {
+  font-size: 18px;
+  margin: 25px auto;
+}
+
+form {
+  width: 450px;
+  height: 350px;
+  margin: 5px auto;
+}
+
+button {
+  margin-top: 5px;
+  font-size: 16px;
+}
+
+.quiz {
+  padding: 10px;
+  max-width:350px;
+  margin: 5px auto;
+}
+
+  .quiz li {
+      width: 165px;
+      margin: 5px 5px 5px 5px;
+      font-size: 14px;
+  }
+
+  .startText {
+    margin-bottom: 5px;
+    font-size: 18px;
+  }
+
+}

@@ -1,0 +1,86 @@
+body {
+  margin:0;
+  padding:0;
+  font-family: harryp;
+  background-color: black;
+  background-image: url(images/gryffindorgif.gif), url(images/slytheringif.gif), url(images/hufflepuffgif.gif), url(images/ravenclawgif.gif);
+  background-repeat: repeat-y;
+  background-position: 12% 0%, 37% 0%, 62% 0%, 87% 0%;
+  cursor: url(images/hat.png), auto;
+}
+
+#header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+h1 {
+  font-size: 70px;
+  margin: 20% 0 0 0;
+  color: white;
+  text-shadow: 2px 2px grey;
+}
+
+form {
+  font-size: 36px;
+  color: white;
+  text-shadow: 2px 2px #363738;
+}
+
+  form input {
+    background-color: #363738;
+    color: white;
+  }
+
+  #formInput {
+    font-size: 20px;
+  }
+
+  #submitInput {
+    font-size: 20px;
+  }
+
+#title {
+  display: flex;
+}
+
+#form {
+  margin: 50px 0;
+  display: flex;
+}
+
+
+
+@media only screen and (max-width: 900px) {
+  body {
+  margin:0;
+  padding:0;
+  background-color: black;
+  background-image: url(images/gryffindorgif.gif), url(images/slytheringif.gif), url(images/hufflepuffgif.gif), url(images/ravenclawgif.gif);
+  background-repeat: repeat-y;
+  background-position: 0% 0%, 35% 0%, 65% 0%, 100% 0%;
+}
+
+h1 {
+  font-size: 56px;
+}
+
+form {
+  font-size: 28px;
+}
+
+  #formInput {
+    font-size: 16px;
+  }
+
+  #submitInput {
+    font-size: 16px;
+  }
+
+  #form {
+  margin: 25px 0;
+}
+
+}

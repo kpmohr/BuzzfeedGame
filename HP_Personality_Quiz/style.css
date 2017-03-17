@@ -1,0 +1,194 @@
+body {
+  margin:0;
+  padding:10px;
+  font-family: harryp;
+  color: black;
+  background-image: url(images/housesBackground.jpg);
+  cursor: url(images/hat.png), auto;
+}
+
+#gameHeader {
+  height: 200px;
+  background-color: black;
+  opacity: 0.7;
+  z-index: -1;
+  width: 95%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 20px auto;
+}
+
+h1 {
+  font-size: 68px;
+  margin: 0;
+  color: white;
+  text-shadow: 2px 2px grey;
+  align-content: center;
+  z-index: 1;
+  margin: 20px auto;
+}
+
+.headerFormInfo {
+  font-size: 68px;
+  margin: 0px auto;
+  color: white;
+  text-shadow: 2px 2px grey;
+  align-content: center;
+  z-index: 1;
+}
+
+.quiz {
+  padding: 10px 20px 10px 20px;
+  max-width:975px;
+  margin:50px auto;
+  background-color: white;
+  opacity: 0.9;
+}
+
+  .quiz ul {
+      list-style:none;
+      padding:0;
+      margin:0;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+  }
+
+  .quiz li {
+      width: 450px;
+      background-color: lightgrey;
+      border: 1px grey solid;
+      margin: 5px 5px 5px 5px;
+      font-size: 20px;
+  }
+
+  .quiz li:hover {
+      background-color: yellow;
+  }
+
+.quiz-question {
+  font-weight:bold;
+  display:block;
+  padding:30px 0 10px 0;
+  margin:0;
+  align-content: center;
+}
+
+.quiz-answer {
+  margin:0;
+  padding:10px;
+  margin-bottom:5px;
+}
+
+.lightBlueBackground {
+  background-color: #13D1EF;
+}
+
+.quiz-result {
+  width: 500px;
+  margin: 50px auto;
+  opacity: 0.9;
+  padding: 15px;
+}
+
+h4 {
+  font-size: 42px;
+}
+
+p {
+  font-size: 20px;
+}
+
+.gryffindorImage {
+  background-image: url(images/Gryffindor.png);
+  background-repeat: no-repeat;
+  background-position: 80% 20%;
+  z-index: 1;
+}
+
+.ravenclawImage {
+  background-image: url(images/Ravenclaw.png);
+  background-repeat: no-repeat;
+  background-position: 80% 20%;
+  z-index: 1;
+}
+
+.hufflepuffImage {
+  background-image: url(images/Hufflepuff.png);
+  background-repeat: no-repeat;
+  background-position: 80% 20%;
+  z-index: 1;
+}
+
+.slytherinImage {
+  background-image: url(images/Slytherin.png);
+  background-repeat: no-repeat;
+  background-position: 80% 20%;
+  z-index: 1;
+}
+
+@media only screen and (max-width: 900px) {
+#gameHeader {
+  height: 150px;
+}
+
+h1 {
+  font-size: 42px;
+}
+
+.headerFormInfo {
+  font-size: 42px;
+}
+
+
+  }
+
+@media only screen and (max-width: 1050px) {
+.quiz {
+  padding: 10px 10px 10px 10px;
+  max-width:500px;
+  margin:25px auto;
+}
+
+  .quiz li {
+      width: 215px;
+      font-size: 16px;
+  }
+
+.quiz-question {
+  padding:10px 0 5px 0;
+}
+
+.quiz-result {
+  width: 350px;
+  margin: 25px auto;
+  padding: 10px;
+}
+
+h4 {
+  font-size: 36px;
+}
+
+p {
+  font-size: 16px;
+}
+
+.gryffindorImage {
+  background-position: 90% 10%;
+}
+
+.ravenclawImage {
+  background-position: 90% 10%;
+}
+
+.hufflepuffImage {
+  background-position: 90% 10%;
+}
+
+.slytherinImage {
+  background-position: 90% 10%;
+}
+
+  }
+
